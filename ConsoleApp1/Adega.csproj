@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Clients\Models\" />
+    <Folder Include="Clients\Repository\" />
+    <Folder Include="Clients\Service\" />
+    <Folder Include="Clients\Start\" />
+    <Folder Include="DataBase\" />
+    <Folder Include="Common\" />
+    <Folder Include="Product\" />
+    <Folder Include="Stock\" />
+  </ItemGroup>
+
+</Project>
