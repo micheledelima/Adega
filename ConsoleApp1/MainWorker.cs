@@ -1,6 +1,6 @@
 ﻿namespace Adega
 {
-    public class Program
+    public class MainWorker
     {
         static void Main(string[] args)
         {
