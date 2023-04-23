@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Clients\Interfaces\Services\" />
+    <Folder Include="Clients\Interfaces\Repositories\" />
     <Folder Include="Clients\Models\" />
-    <Folder Include="Clients\Repository\" />
-    <Folder Include="Clients\Service\" />
-    <Folder Include="Clients\Start\" />
+    <Folder Include="Clients\Repositories\" />
+    <Folder Include="Clients\Services\" />
+    <Folder Include="Clients\Workers\" />
     <Folder Include="DataBase\" />
     <Folder Include="Common\" />
     <Folder Include="Product\" />

@@ -22,13 +22,13 @@
                 switch (Console.Read())
                 {
                     case '1':
-                        //chama start que é o "menu de operações" do cliente
+                        //chama WorkerClient que é o "menu de operações" do cliente
                         break;
                     case '2':
-                        //chama start que é o ""menu de operações"" do produto
+                        //chama WorkerProduct que é o ""menu de operações"" do produto
                         break;
                     case '3':
-                        //chama start que é o ""menu de operações"" do estoque
+                        //chama WorkerStock que é o ""menu de operações"" do estoque
                         break;
                     case '0':
                         Environment.Exit(0);
