@@ -14,9 +14,8 @@
     <Folder Include="Clients\Repositories\" />
     <Folder Include="Clients\Services\" />
     <Folder Include="Clients\Workers\" />
-    <Folder Include="DataBase\" />
     <Folder Include="Common\" />
-    <Folder Include="Product\" />
+    <Folder Include="DataBase\Product\" />
     <Folder Include="Stock\" />
   </ItemGroup>
 
