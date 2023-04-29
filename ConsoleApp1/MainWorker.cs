@@ -1,4 +1,6 @@
-﻿namespace Adega
+﻿using Adega.Clients.Workers;
+
+namespace Adega
 {
     public class MainWorker
     {
@@ -9,8 +11,9 @@
 
         public static void StartMenu()
         {
+            var client = new ClientWorker();
             Console.Title = "Projeto Adega";
-           
+
             Console.WriteLine("Escolha qual area deseja realizar operação: ");
             while (true)
             {
@@ -22,7 +25,7 @@
                 switch (Console.Read())
                 {
                     case '1':
-                        //chama WorkerClient que é o "menu de operações" do cliente
+                        client.ClientScreen();
                         break;
                     case '2':
                         //chama WorkerProduct que é o ""menu de operações"" do produto
