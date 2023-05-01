@@ -1,21 +1,37 @@
-﻿namespace Adega.Clients.Models
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Adega.Clients.Models
 {
     public class ClientModel
     {
-        public string Nome { get; set; }
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
 
-        public string Email { get; set; }
+        [BsonElement("name")]
+        public string? Name { get; set; }
 
-        public string Endereco { get; set; }
+        [BsonElement("email")]
+        public string? Email { get; set; }
 
-        public string Telefone { get; set; }
+        [BsonElement("address")]
+        public string? Address { get; set; }
 
-        public string CPF { get; set; }
+        [BsonElement("telphone")]
+        public string? Telphone { get; set; }
 
-        public int Idade { get; set; }
+        [BsonElement("cpf")]
+        public string? CPF { get; set; }
 
-        public string CEP { get; set; }
+        [BsonElement("age")]
+        public int Age { get; set; }
 
-        public DateTime DataNascimento { get; set; }
+        [BsonElement("cep")]
+        public string? CEP { get; set; }
+
+        [BsonElement("birthdate")]
+        public DateTime? Birthdate { get; set; }
     }
 }
+
