@@ -1,6 +1,8 @@
-﻿using Adega.Clients.Interfaces.Services;
-using Adega.Clients.Services;
-using Adega.Clients.Workers;
+﻿using Adega.Clients.Workers;
+using Adega.DataBase;
+using Adega.DataBase.Product.Repositories;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Adega
 {
@@ -8,12 +10,20 @@ namespace Adega
     {
         static void Main(string[] args)
         {
-            StartMenu();
-        } 
-        
+            var builder = WebApplication.CreateBuilder(args);
 
-        public static void StartMenu()        {
-            
+            // Add services to the container.
+            builder.Services.Configure<StoreDatabaseSettings>(
+                builder.Configuration.GetSection("StoreDatabase"));
+            builder.Services.AddSingleton<ProductRepository>();
+
+            StartMenu();
+        }
+
+
+        public static void StartMenu()
+        {
+
             ClientWorker client = new ClientWorker();
 
             Console.Title = "Projeto Adega";
