@@ -8,5 +8,9 @@ namespace Adega.Clients.Repositories
         {
             return true;
         }
+
+        public bool Update(ClientModel clientModel) {  return true; }
+
+        public bool Delete(ClientModel clientModel) { return true; }    
     }
 }
