@@ -48,28 +48,28 @@ namespace Adega.Clients.Workers
             var cliModel = new ClientModel();
 
             Console.WriteLine("Informe o nome:");
-            cliModel.Nome = Console.ReadLine();
+            cliModel.Name = Console.ReadLine();
 
             Console.WriteLine("Informe o enereço:");
-            cliModel.Endereco = Console.ReadLine();
+            cliModel.Address = Console.ReadLine();
 
             Console.WriteLine("Informe o email:");
             cliModel.Email = Console.ReadLine();
 
             Console.WriteLine("Informe o telefone:");
-            cliModel.Telefone = Console.ReadLine();
+            cliModel.Telphone = Console.ReadLine();
 
             Console.WriteLine("Informe o CPF:");
             cliModel.CPF = Console.ReadLine();
 
             Console.WriteLine("Informe a idade:");
-            cliModel.Idade = Convert.ToInt32(Console.ReadLine());
+            cliModel.Age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Informe o CEP:");
             cliModel.CEP = Console.ReadLine();
 
             Console.WriteLine("Informe a data de nascimento:");
-            cliModel.DataNascimento = Convert.ToDateTime(Console.ReadLine());
+            cliModel.Birthdate = Convert.ToDateTime(Console.ReadLine());
 
             _clientService.SetClient(cliModel);
         }
@@ -94,14 +94,14 @@ namespace Adega.Clients.Workers
             Console.WriteLine("Selecione o campo para alterar:");
 
 
-            Console.WriteLine("1 - nome: "  + cliModel.Nome);
-            Console.WriteLine("2 - enereço: " + cliModel.Endereco);
+            Console.WriteLine("1 - nome: "  + cliModel.Name);
+            Console.WriteLine("2 - enereço: " + cliModel.Address);
             Console.WriteLine("3 - Informe o email: " + cliModel.Email);                        
-            Console.WriteLine("4 - Telefone: " + cliModel.Telefone);
+            Console.WriteLine("4 - Telefone: " + cliModel.Telphone);
             Console.WriteLine("5 - CPF: " + cliModel.CPF);
-            Console.WriteLine("6 - Idade: " + cliModel.Idade);
+            Console.WriteLine("6 - Idade: " + cliModel.Age);
             Console.WriteLine("7 - Informe o CEP " + cliModel.CEP);
-            Console.WriteLine("8 - Data de nascimento: " + cliModel.DataNascimento);
+            Console.WriteLine("8 - Data de nascimento: " + cliModel.Birthdate);
             Console.WriteLine("9 - Sair");
 
 
