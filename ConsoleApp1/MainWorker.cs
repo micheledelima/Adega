@@ -1,4 +1,6 @@
-﻿using Adega.Clients.Workers;
+﻿using Adega.Clients.Interfaces.Services;
+using Adega.Clients.Services;
+using Adega.Clients.Workers;
 
 namespace Adega
 {
@@ -7,11 +9,13 @@ namespace Adega
         static void Main(string[] args)
         {
             StartMenu();
-        }
+        } 
+        
 
-        public static void StartMenu()
-        {
-            var client = new ClientWorker();
+        public static void StartMenu()        {
+            
+            ClientWorker client = new ClientWorker();
+
             Console.Title = "Projeto Adega";
 
             Console.WriteLine("Escolha qual area deseja realizar operação: ");

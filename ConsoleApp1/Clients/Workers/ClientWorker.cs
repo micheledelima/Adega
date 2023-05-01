@@ -6,16 +6,7 @@ namespace Adega.Clients.Workers
     public class ClientWorker
     {
         private readonly IClientService _clientService;
-
-        public ClientWorker(IClientService clientService)
-        {
-            _clientService = clientService;
-        }
-
-        public ClientWorker(IClientService clientService, object clientService1) : this(clientService)
-        {
-        }
-
+           
         public void ClientScreen()
         {
             Console.Title = "Area adminitrativa - Cliente";
