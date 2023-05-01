@@ -1,5 +1,6 @@
 ﻿using Adega.Clients.Workers;
 using Adega.DataBase;
+using Adega.DataBase.Product.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,6 +15,7 @@ namespace Adega
             // Add services to the container.
             builder.Services.Configure<StoreDatabaseSettings>(
                 builder.Configuration.GetSection("StoreDatabase"));
+            builder.Services.AddSingleton<ProductRepository>();
 
             StartMenu();
         }
