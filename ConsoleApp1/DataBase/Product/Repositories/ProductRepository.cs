@@ -22,13 +22,19 @@ namespace Adega.DataBase.Product.Repositories
         }
 
         //criar crud necessário para cada entidade
-        public async Task CreateAsync(ProductModel productModel) =>
-        await _productCollection.InsertOneAsync(productModel);
+        public async Task CreateAsync(ProductModel productModel)
+        {
+            await _productCollection.InsertOneAsync(productModel);
+        }
 
-        public async Task UpdateAsync(string id, ProductModel productModel) =>
+        public async Task UpdateAsync(string id, ProductModel productModel)
+        {
             await _productCollection.ReplaceOneAsync(x => x.Id == id, productModel);
+        }
 
-        public async Task RemoveAsync(string id) =>
+        public async Task RemoveAsync(string id)
+        {
             await _productCollection.DeleteOneAsync(x => x.Id == id);
+        }
     }
 }
