@@ -1,8 +1,6 @@
-﻿using Adega.Clients.Repositories;
-
-namespace Adega.Clients.Interfaces.Repositories
+﻿namespace Loja.Clients.Interfaces.Repositories
 {
-    public class IClientRepository : ClientRepository
+    public interface IClientRepository
     {
     }
 }

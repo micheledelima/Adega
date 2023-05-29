@@ -1,4 +1,4 @@
-﻿namespace Adega.Stock.Models
+﻿namespace Loja.Stock.Models
 {
     public class StockModel
     {

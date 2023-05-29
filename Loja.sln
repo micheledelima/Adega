@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adega", "ConsoleApp1\Adega.csproj", "{442D9371-883F-4569-B019-A53916D589F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loja", "ConsoleApp1\Loja.csproj", "{442D9371-883F-4569-B019-A53916D589F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{AAF7C42E-31E5-4E30-A5D9-89E3042CD035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{AAF7C42E-31E5-4E30-A5D9-89E3042CD035}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

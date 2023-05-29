@@ -1,12 +1,13 @@
-﻿using Adega.Clients.Interfaces.Services;
-using Adega.Clients.Models;
+﻿using Loja.Clients.Interfaces.Services;
+using Loja.Clients.Interfaces.Workers;
+using Loja.Clients.Models;
 
-namespace Adega.Clients.Workers
+namespace Loja.Clients.Workers
 {
-    public class ClientWorker
+    public class ClientWorker : IClientWorker
     {
         private readonly IClientService _clientService;
-           
+
         public void ClientScreen()
         {
             Console.Title = "Area adminitrativa - Cliente";
@@ -86,7 +87,7 @@ namespace Adega.Clients.Workers
 
             Console.WriteLine("Selecione o cliente para alterar:");
 
-            
+
 
 
 
@@ -94,9 +95,9 @@ namespace Adega.Clients.Workers
             Console.WriteLine("Selecione o campo para alterar:");
 
 
-            Console.WriteLine("1 - nome: "  + cliModel.Name);
+            Console.WriteLine("1 - nome: " + cliModel.Name);
             Console.WriteLine("2 - enereço: " + cliModel.Address);
-            Console.WriteLine("3 - Informe o email: " + cliModel.Email);                        
+            Console.WriteLine("3 - Informe o email: " + cliModel.Email);
             Console.WriteLine("4 - Telefone: " + cliModel.Telphone);
             Console.WriteLine("5 - CPF: " + cliModel.CPF);
             Console.WriteLine("6 - Idade: " + cliModel.Age);

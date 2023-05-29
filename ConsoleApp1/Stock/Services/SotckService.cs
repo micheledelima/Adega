@@ -1,7 +1,7 @@
-﻿using Adega.Stock.Interfaces.Repositories;
-using Adega.Stock.Models;
+﻿using Loja.Stock.Interfaces.Repositories;
+using Loja.Stock.Models;
 
-namespace Adega.Stock.Services
+namespace Loja.Stock.Services
 {
     public class SotckService : IStockRepository
     {

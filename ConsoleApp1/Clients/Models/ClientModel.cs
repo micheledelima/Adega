@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Adega.Clients.Models
+namespace Loja.Clients.Models
 {
     public class ClientModel
     {
