@@ -1,8 +1,8 @@
-﻿using Loja.Product.Interfaces.Repositories;
-using Loja.Product.Interfaces.Services;
-using Loja.Product.Models;
+﻿using Store.Product.Interfaces.Repositories;
+using Store.Product.Interfaces.Services;
+using Store.Product.Models;
 
-namespace Loja.Product.Services
+namespace Store.Product.Services
 {
     public class ProductService : IProductService
     {

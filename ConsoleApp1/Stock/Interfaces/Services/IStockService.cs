@@ -1,6 +1,6 @@
-﻿using Loja.Stock.Models;
+﻿using Store.Stock.Models;
 
-namespace Loja.Stock.Interfaces.Services
+namespace Store.Stock.Interfaces.Services
 {
     internal interface IStockService
     {

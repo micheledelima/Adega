@@ -1,6 +1,6 @@
-﻿using Loja.Stock.Models;
+﻿using Store.Stock.Models;
 
-namespace Loja.Stock.Repositories
+namespace Store.Stock.Repositories
 {
     public class StockRepository
     {

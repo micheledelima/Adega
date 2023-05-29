@@ -1,7 +1,7 @@
-﻿using Loja.Stock.Interfaces.Repositories;
-using Loja.Stock.Models;
+﻿using Store.Stock.Interfaces.Repositories;
+using Store.Stock.Models;
 
-namespace Loja.Stock.Services
+namespace Store.Stock.Services
 {
     public class SotckService : IStockRepository
     {

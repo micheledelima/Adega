@@ -1,8 +1,8 @@
-﻿using Loja.Clients.Interfaces.Services;
-using Loja.Clients.Interfaces.Workers;
-using Loja.Clients.Models;
+﻿using Store.Clients.Interfaces.Services;
+using Store.Clients.Interfaces.Workers;
+using Store.Clients.Models;
 
-namespace Loja.Clients.Workers
+namespace Store.Clients.Workers
 {
     public class ClientWorker : IClientWorker
     {

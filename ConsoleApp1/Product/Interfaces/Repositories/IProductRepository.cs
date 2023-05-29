@@ -1,6 +1,6 @@
-﻿using Loja.Product.Models;
+﻿using Store.Product.Models;
 
-namespace Loja.Product.Interfaces.Repositories
+namespace Store.Product.Interfaces.Repositories
 {
     public interface IProductRepository
     {

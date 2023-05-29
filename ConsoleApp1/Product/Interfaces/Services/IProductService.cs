@@ -1,6 +1,6 @@
-﻿using Loja.Product.Models;
+﻿using Store.Product.Models;
 
-namespace Loja.Product.Interfaces.Services
+namespace Store.Product.Interfaces.Services
 {
     public interface IProductService
     {

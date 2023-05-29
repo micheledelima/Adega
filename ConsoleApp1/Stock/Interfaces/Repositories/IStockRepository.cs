@@ -1,6 +1,6 @@
-﻿using Loja.Stock.Repositories;
+﻿using Store.Stock.Repositories;
 
-namespace Loja.Stock.Interfaces.Repositories
+namespace Store.Stock.Interfaces.Repositories
 {
     public class IStockRepository : StockRepository
     {

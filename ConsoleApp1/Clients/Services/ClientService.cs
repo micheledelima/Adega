@@ -1,7 +1,7 @@
-﻿using Loja.Clients.Interfaces.Services;
-using Loja.Clients.Models;
+﻿using Store.Clients.Interfaces.Services;
+using Store.Clients.Models;
 
-namespace Loja.Clients.Services
+namespace Store.Clients.Services
 {
     public class ClientService : IClientService
     {

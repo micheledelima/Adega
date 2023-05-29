@@ -1,4 +1,4 @@
-﻿namespace Loja.Clients.Interfaces.Repositories
+﻿namespace Store.Clients.Interfaces.Repositories
 {
     public interface IClientRepository
     {

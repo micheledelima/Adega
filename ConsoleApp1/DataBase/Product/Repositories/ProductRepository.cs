@@ -1,8 +1,8 @@
-﻿using Loja.Product.Interfaces.Repositories;
-using Loja.Product.Models;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
+using Store.Product.Interfaces.Repositories;
+using Store.Product.Models;
 
-namespace Loja.DataBase.Product.Repositories
+namespace Store.DataBase.Product.Repositories
 {
     public class ProductRepository : IProductRepository
     {

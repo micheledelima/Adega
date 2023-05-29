@@ -1,4 +1,4 @@
-﻿namespace Loja.Product.Interfaces.Workers
+﻿namespace Store.Product.Interfaces.Workers
 {
     public interface IProductWorker
     {

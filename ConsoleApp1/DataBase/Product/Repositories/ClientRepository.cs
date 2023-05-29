@@ -1,8 +1,8 @@
-﻿using Loja.Clients.Interfaces.Repositories;
-using Loja.Clients.Models;
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
+using Store.Clients.Interfaces.Repositories;
+using Store.Clients.Models;
 
-namespace Loja.DataBase.Product.Repositories
+namespace Store.DataBase.Product.Repositories
 {
     public class ClientRepository : IClientRepository
     {

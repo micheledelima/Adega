@@ -1,6 +1,6 @@
-﻿using Loja.Product.Workers;
+﻿using Store.Product.Workers;
 
-namespace Loja
+namespace Store
 {
     public static class MainWorker
     {
@@ -12,7 +12,7 @@ namespace Loja
 
         public static void StartMenu(string[] args)
         {
-            Console.Title = "Projeto Adega";
+            Console.Title = "Projeto Loja";
             ProductWorker productWorker = new ProductWorker();
 
             Console.WriteLine("Escolha qual area deseja realizar operação: ");

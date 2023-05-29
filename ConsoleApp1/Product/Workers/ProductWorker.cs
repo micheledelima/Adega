@@ -1,10 +1,10 @@
-﻿using Loja.DataBase.Product.Repositories;
-using Loja.Product.Interfaces.Workers;
-using Loja.Product.Models;
-using Loja.Product.Services;
-using MongoDB.Bson;
+﻿using MongoDB.Bson;
+using Store.DataBase.Product.Repositories;
+using Store.Product.Interfaces.Workers;
+using Store.Product.Models;
+using Store.Product.Services;
 
-namespace Loja.Product.Workers
+namespace Store.Product.Workers
 {
     public class ProductWorker : IProductWorker
     {

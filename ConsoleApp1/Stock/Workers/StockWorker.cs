@@ -1,4 +1,4 @@
-﻿namespace Loja.Stock.Workers
+﻿namespace Store.Stock.Workers
 {
     internal class StockWorker
     {

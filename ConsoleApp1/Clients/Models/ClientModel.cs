@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Loja.Clients.Models
+namespace Store.Clients.Models
 {
     public class ClientModel
     {

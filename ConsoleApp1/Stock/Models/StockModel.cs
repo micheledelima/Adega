@@ -1,4 +1,4 @@
-﻿namespace Loja.Stock.Models
+﻿namespace Store.Stock.Models
 {
     public class StockModel
     {
