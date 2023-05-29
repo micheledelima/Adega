@@ -6,11 +6,10 @@ namespace Store
     {
         public static void Main(string[] args)
         {
-            StartMenu(args);
+            StartMenu();
         }
 
-
-        public static void StartMenu(string[] args)
+        public static void StartMenu()
         {
             Console.Title = "Projeto Loja";
             ProductWorker productWorker = new ProductWorker();
