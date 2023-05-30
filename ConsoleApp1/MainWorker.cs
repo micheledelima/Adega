@@ -1,32 +1,18 @@
-﻿using Adega.Clients.Workers;
-using Adega.DataBase;
-using Adega.DataBase.Product.Repositories;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Store.Product.Workers;
 
-namespace Adega
+namespace Store
 {
-    public class MainWorker
+    public static class MainWorker
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
-
-            // Add services to the container.
-            builder.Services.Configure<StoreDatabaseSettings>(
-                builder.Configuration.GetSection("StoreDatabase"));
-            builder.Services.AddSingleton<ProductRepository>();
-
             StartMenu();
         }
 
-
         public static void StartMenu()
         {
-
-            ClientWorker client = new ClientWorker();
-
-            Console.Title = "Projeto Adega";
+            Console.Title = "Projeto Loja";
+            ProductWorker productWorker = new ProductWorker();
 
             Console.WriteLine("Escolha qual area deseja realizar operação: ");
             while (true)
@@ -39,10 +25,10 @@ namespace Adega
                 switch (Console.Read())
                 {
                     case '1':
-                        client.ClientScreen();
+                        //_clientWorker.ClientScreen();
                         break;
                     case '2':
-                        //chama WorkerProduct que é o ""menu de operações"" do produto
+                        productWorker.ProductScreen();
                         break;
                     case '3':
                         //chama WorkerStock que é o ""menu de operações"" do estoque

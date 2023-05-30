@@ -1,6 +1,6 @@
-﻿using Adega.Stock.Models;
+﻿using Store.Stock.Models;
 
-namespace Adega.Stock.Interfaces.Services
+namespace Store.Stock.Interfaces.Services
 {
     internal interface IStockService
     {

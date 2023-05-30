@@ -1,6 +1,6 @@
-﻿using Adega.Clients.Models;
+﻿using Store.Clients.Models;
 
-namespace Adega.Clients.Interfaces.Services
+namespace Store.Clients.Interfaces.Services
 {
     public interface IClientService
     {

@@ -1,6 +1,6 @@
-﻿using Adega.Stock.Repositories;
+﻿using Store.Stock.Repositories;
 
-namespace Adega.Stock.Interfaces.Repositories
+namespace Store.Stock.Interfaces.Repositories
 {
     public class IStockRepository : StockRepository
     {
