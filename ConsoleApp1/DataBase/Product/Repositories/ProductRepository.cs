@@ -32,11 +32,11 @@ namespace Store.DataBase.Product.Repositories
             }
         }
 
-        public async Task UpdateAsync(string id, ProductModel productModel)
+        public async Task UpdateAsync(ProductModel productModel)
         {
             try
             {
-                _ = await _collection.ReplaceOneAsync(x => x.Id == id, productModel);
+                _ = await _collection.ReplaceOneAsync(x => x.Id == productModel.Id, productModel);
             }
             catch (Exception ex)
             {
@@ -44,16 +44,49 @@ namespace Store.DataBase.Product.Repositories
             }
         }
 
-        public async Task RemoveAsync(string id)
+        public async Task RemoveAsync(ProductModel productModel)
         {
             try
             {
-                _ = await _collection.DeleteOneAsync(x => x.Id == id);
+                _ = await _collection.DeleteOneAsync(x => x.Id == productModel.Id);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public async Task<bool> FindOneAsync(ProductModel productModel)
+        {
+            var result = await (await _collection.FindAsync(x => x.ProductId == productModel.ProductId)).FirstOrDefaultAsync();
+            if (result != null)
+                return true;
+            else
+                return false;
+        }
+
+        public async Task<List<ProductModel>> FindAllAsync()
+        {
+            var products = new List<ProductModel>();
+            products = await (await _collection.FindAsync(x => x.Id != null)).ToListAsync();
+
+            return products;
+        }
+
+        public async Task<ProductModel> FindByProductNameAsync(string name)
+        {
+            var product = new ProductModel();
+            product = await (await _collection.FindAsync(x => x.ProductName.ToLowerInvariant() == name.ToLowerInvariant())).FirstOrDefaultAsync();
+
+            return product;
+        }
+
+        public async Task<ProductModel> FindByProductIdAsync(int code)
+        {
+            var product = new ProductModel();
+            product = await (await _collection.FindAsync(x => x.ProductId == code)).FirstOrDefaultAsync();
+
+            return product;
         }
     }
 }
